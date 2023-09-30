@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'tippy.js/dist/tippy.css';
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
+
+body {
+    color: #000;
+    background: #fff;
+}
+.drop-style {
+    /* height: calc(100vh - 300.25px); */
+    max-height: 450px;
+    box-shadow: rgba(101, 119, 134, 0.2) 0 0 15px, rgba(101, 119, 134, 0.15) 0 0 3px 1px;
+}
+.cart-block {
+    padding: 12px 16px;
+}
+.cart-block:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.text-primary {
+    color: #1d9bf0;
+    /* background-color: #00000066; */
+}
+.scroll-custom::-webkit-scrollbar {
+    width: 0.5px;
+    background-color: transparent;
+}
